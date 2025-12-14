@@ -1,4 +1,4 @@
-const Book = require('../models/book.js');
+import Book from "../models/book.js"
 
 const addDefaultBooks = async (req, res) => {
     try {
@@ -150,7 +150,7 @@ const sortBook = async (req, res) => {
         if (BookSort.length === 0) {
             res.status(404).json({
                 success: false,
-                message: 'No books found to sort!'
+                message: 'No books found to sort!' 
             })
         }
         res.status(200).json({

@@ -1,5 +1,5 @@
-const express = require('express');
-const {getAllBooks, getBookByID, addNewBook, updateBook, deleteBook,sortBook,deleteAllBook, addDefaultBooks} = require('../controllers/bookController.js');
+import express from "express"
+import {getAllBooks, getBookByID, addNewBook, updateBook, deleteBook,sortBook,deleteAllBook, addDefaultBooks} from '../controllers/bookController.js';
 
 //create express router     
 const router = express.Router();
